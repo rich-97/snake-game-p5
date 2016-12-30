@@ -1,0 +1,22 @@
+{
+  "name": "snake-game-p5",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "rich <morenoricardo237@outlook.es>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mixins.scss": "*"
+  }
+}

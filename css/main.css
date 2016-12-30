@@ -1,0 +1,25 @@
+body {
+  padding: 0;
+  box-sizing: border-box; }
+
+.container {
+  width: 400px;
+  margin: 10px auto; }
+
+h1 {
+  text-align: center;
+  color: #282c34; }
+
+.bar {
+  padding: 10px 0;
+  color: #ccc; }
+
+canvas {
+  border-radius: 5px; }
+
+#canvas-wrap {
+  margin: 0 auto; }
+
+footer {
+  margin: 20px 0;
+  text-align: center; }

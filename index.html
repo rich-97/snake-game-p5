@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>The Snake Game</title>
+        <script src="node_modules/p5/lib/p5.min.js"></script>
+        <script src="js/keyCustom.js"></script>
+        <script src="js/classes.js"></script>
+        <script src="js/sketch.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>The Snake Game</h1>
+            <div class="bar"></div>
+            <div id="canvas-wrap"></div>
+        </div>
+        <footer>Created by <a href="https://github.com/rich-97">Ricardo Moreno</a>.</footer>
+        <script>
+            var $wrap = document.querySelector('#canvas-wrap');
+            var $bar = document.querySelector('.bar');
+            score.wrap = $bar;
+            score.show();
+            score.reset();
+
+            window.onload = function () {
+                $wrap.appendChild(canvas);
+            };
+
+        </script>
+    </body>
+</html>
