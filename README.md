@@ -6,7 +6,7 @@ Quick show
 
 [Play it.](https://rich-97.github.io/snake-game-p5)
 
-For installation and use you should do it this:
+For installation and use you should does this:
 
 1.  Clone the repo.
 2.  Install the dependencies with `npm install`.
