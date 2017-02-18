@@ -1,6 +1,6 @@
 function Square (w, h, rgb, randCoord) {
     if (randCoord === undefined) {
-        var randCoord = false;
+        randCoord = false;
     }
 
     width -= w / 2;
@@ -68,7 +68,7 @@ function Snake (w, h, rgb, randCoord) {
         if (this.y > height) {
             this.y = 0;
         } else if (this.y < 0) {
-            this.y = width;
+            this.y = height;
         }
 
             

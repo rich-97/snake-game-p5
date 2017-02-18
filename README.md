@@ -2,7 +2,7 @@
 
 Quick show
 
-![snake](snake.png)
+![snake](snake.gif)
 
 [Play it.](https://rich-97.github.io/snake-game-p5)
 
