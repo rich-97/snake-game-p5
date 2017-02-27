@@ -1,39 +1,3 @@
-function Square (w, h, rgb, randCoord) {
-    if (randCoord === undefined) {
-        randCoord = false;
-    }
-
-    width -= w / 2;
-    height -= h / 2;
-
-    if (randCoord) {
-        this.x = random(0, width);
-        this.y = random(0, height);
-    } else {
-        this.x = 0;
-        this.y = 0;
-    }
-
-    this.w = w;
-    this.h = h;
-    
-    this.show = function () {
-        if (!Array.isArray(rgb)) {
-            fill(rgb);
-        } else {
-            fill.apply(null, rgb);
-        }
-
-        noStroke();
-        rect(this.x, this.y, this.w, this.h);
-    };
-    
-    this.rewind = function () {
-        this.x = random(0, width);
-        this.y = random(0, height);
-    };
-}
-
 function Snake (w, h, rgb, randCoord) {
     Square.call(this, w, h, rgb, randCoord);
     this.xspeed = 1;
@@ -43,7 +7,7 @@ function Snake (w, h, rgb, randCoord) {
 
     this.crash = function (xTail, yTail) {
         var diff = dist(this.x, this.y, xTail, yTail);
-        
+
         if (diff < 7) {
             return true;
         } else {
@@ -71,7 +35,7 @@ function Snake (w, h, rgb, randCoord) {
             this.y = height;
         }
 
-            
+
         this.tail[this.rise - 1] = createVector(this.x, this.y);
         this.x += this.xspeed * this.w;
         this.y += this.yspeed * this.h;
@@ -117,22 +81,3 @@ function Snake (w, h, rgb, randCoord) {
         this.rewind();
     }
 }
-
-function Food (w, h, rgb, randCoord) {
-    Square.call(this, w, h, rgb, randCoord);
-}
-
-function Score () {
-    this.val = 0;
-    this.wrap = null;
-
-    this.reset = function () {
-        this.val = 0;
-    };
-
-    this.show = function () {
-        this.wrap.textContent = 'Score: ' + this.val;
-    };
-
-}
-

@@ -1,5 +1,4 @@
-
 node_modules
-lib
+scss/vendor
 *.swp
-
+assets

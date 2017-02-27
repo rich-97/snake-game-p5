@@ -7,13 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ricardo Moreno",
   "license": "ISC",
   "dependencies": {
-    "p5": "^0.5.5"
-  },
-  "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-sass": "^3.0.0"
+    "gulp-sass": "^3.0.0",
+    "p5": "^0.5.5"
   }
 }

@@ -1,28 +1,32 @@
 body {
-    padding: 0;
     box-sizing: border-box;
+    font-family: 'PT Mono';
+    padding: 0;
 }
 
 .container {
-    width: 400px;
     margin: 10px auto;
+    width: 400px;
 }
 
 h1 {
+    color: $blue-dark;
     text-align: center;
-    color: $color1;
 }
+
 .bar {
+    color: darken($gray, 20);
     padding: 10px 0;
-    color: #ccc;
 }
 
 canvas {
     border-radius: 5px;
 }
 
-#canvas-wrap {
-    margin: 0 auto;
+div {
+    &[id='canvas-wrap'] {
+        margin: 0 auto;
+    }
 }
 
 footer {

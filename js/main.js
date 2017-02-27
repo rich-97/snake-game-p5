@@ -17,7 +17,7 @@ function draw () {
     if (snake.eat(food)) {
         score.val++;
         score.show();
-        snake.rise++; 
+        snake.rise++;
         food.rewind();
     }
 
@@ -49,26 +49,26 @@ function draw () {
 
 function keyPressed () {
     switch (keyCode) {
-        case W:
-        case K:
+        case keys.w:
+        case keys.k:
         case UP_ARROW: {
             snake.dir(0, -speed);
             break;
         }
-        case S:
-        case J:
+        case keys.s:
+        case keys.j:
         case DOWN_ARROW: {
             snake.dir(0, speed);
             break;
         }
-        case A:
-        case H:
+        case keys.a:
+        case keys.h:
         case LEFT_ARROW: {
             snake.dir(-speed, 0);
             break;
         }
-        case D:
-        case L:
+        case keys.d:
+        case keys.l:
         case RIGHT_ARROW: {
             snake.dir(speed, 0);
             break;
@@ -80,3 +80,13 @@ function keyPressed () {
     }
 }
 
+window.onload = function () {
+    var $wrap = document.querySelector('#canvas-wrap');
+    var $bar = document.querySelector('.bar');
+
+    score.wrap = $bar;
+    score.show();
+    score.reset();
+
+    $wrap.appendChild(canvas);
+};
