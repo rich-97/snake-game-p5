@@ -1,10 +1,12 @@
-# The Snake Game
+<h1 align="center">The Snake Game</h1>
 
-Quick show
+<p align="center">
+  <img src="snake.gif"/>
+</p>
 
-![snake](snake.gif)
-
-[Play it.](https://rich-97.github.io/snake-game-p5)
+<p align="center">
+  <a href="https://rich-97.github.io/snake-game-p5">Play it</a>
+</p>
 
 For installation and use you should does this:
 
@@ -13,4 +15,4 @@ For installation and use you should does this:
 3.  Display the `index.html` in your browser.
 4.  Play it and change whatever you want.
 
-For learn about of **p5** see this [p5.js](http://p5js.org).
+For learn about of **p5** check his site [p5.js](http://p5js.org).
