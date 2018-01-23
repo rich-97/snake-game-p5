@@ -5,7 +5,7 @@ function Snake (w, h, rgb, randCoord) {
     this.rise = 0;
     this.tail = [];
 
-    this.crash = function (xTail, yTail) {
+    this.crash = function(xTail, yTail) {
         var diff = dist(this.x, this.y, xTail, yTail);
 
         if (diff < 7) {
@@ -13,10 +13,9 @@ function Snake (w, h, rgb, randCoord) {
         } else {
             return false;
         }
-
     };
 
-    this.update = function () {
+    this.update = function() {
         if (this.rise === this.tail.length) {
             for (var i = 0; i < this.tail.length - 1; i++) {
                 this.tail[i] = this.tail[i + 1];
@@ -41,7 +40,7 @@ function Snake (w, h, rgb, randCoord) {
         this.y += this.yspeed * this.h;
     };
 
-    this.dir = function (x, y) {
+    this.dir = function(x, y) {
         if (this.tail.length > 0) {
             if (this.xspeed === 0) {
                 if (this.yspeed !== -y) {
@@ -65,7 +64,7 @@ function Snake (w, h, rgb, randCoord) {
         }
     };
 
-    this.eat = function (food) {
+    this.eat = function(food) {
         var diff = dist(this.x, this.y, food.x, food.y);
 
         if (diff < 7) {
@@ -75,9 +74,10 @@ function Snake (w, h, rgb, randCoord) {
         }
     };
 
-    this.death = function () {
+    this.death = function() {
         this.rise = 0;
         this.tail = [];
+
         this.rewind();
     }
 }

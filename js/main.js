@@ -1,5 +1,4 @@
-var snake;
-var food;
+var snake, food;
 var speed = 1;
 var score = new Score();
 
@@ -22,9 +21,9 @@ function draw () {
     }
 
     for (var i = 0; i < snake.tail.length; i++) {
-        xTail = snake.tail[i].x;
-        yTail = snake.tail[i].y;
-        var diff = dist(xTail, yTail, food.x, food.y);
+        var xTail = snake.tail[i].x;
+        var yTail = snake.tail[i].y;
+        var diff  = dist(xTail, yTail, food.x, food.y);
 
         if (diff < 7) {
             food.rewind();
